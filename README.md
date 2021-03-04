@@ -19,9 +19,9 @@
     <a href="https://microverse.org/"><strong> Microverse Page »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://math-magician-oloo.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/oloomoses/weatherApp/issues">Report Bug & Request Feature</a>
+    <a href="https://github.com/oloomoses/math-magician/issues">Report Bug & Request Feature</a>
   </p>
 </p>
 
@@ -52,7 +52,6 @@ Components of this project is listed below;
 * CSS
 * Javascript - ES6
 * VsCode
-* Github API
 * EsLint
 
 ## [Live Demo](https://math-magician-oloo.herokuapp.com/)
