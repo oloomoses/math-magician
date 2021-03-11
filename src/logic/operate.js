@@ -24,8 +24,7 @@ const operate = (num1, num2, operation) => {
       break;
 
     default:
-      res = 0;
-      break;
+      return 0;
   }
 
   return res;
