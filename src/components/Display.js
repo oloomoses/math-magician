@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Display({ result }) {
   return (
     <div>
-      <h1>{ result }</h1>
+      { result }
     </div>
   );
 }
