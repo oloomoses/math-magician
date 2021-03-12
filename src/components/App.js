@@ -1,32 +1,21 @@
-/* eslint-disable react/no-access-state-in-setstate */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-export class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      total: '',
-      next: '',
-      operation: '',
-    };
-  }
+const App = () => {
+  const [state, setState] = useState({ total: '', next: '', operation: '' });
 
-  handleClick = btnName => {
-    this.setState(calculate(this.state, btnName));
-  }
+  const handleClick = btnName => {
+    setState(calculate(state, btnName));
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <>
-        <Display result={`${total}${operation}${next}`} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <Display result={`${state.total} ${state.operation} ${state.next}`} />
+      <ButtonPanel clickHandler={handleClick} />
+    </>
+  );
+};
 
 export default App;

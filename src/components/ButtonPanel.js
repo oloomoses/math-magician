@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel({ clickHandler }) {
+const ButtonPanel = ({ clickHandler }) => {
   const groupData = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', 'x'],
@@ -24,7 +24,7 @@ function ButtonPanel({ clickHandler }) {
       ))}
     </div>
   );
-}
+};
 
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
