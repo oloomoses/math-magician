@@ -12,12 +12,18 @@ const ButtonPanel = ({ clickHandler }) => {
   ];
 
   return (
-    <div className="button">
+    <div className="btnPanel">
       { groupData.map(group => (
-        <div key={group}>
+        <div key={group} className="group">
           {
           group.map(btn => (
-            <Button key={btn} btnName={`${btn}`} clickHandler={clickHandler} />
+            <Button
+              color={['x', '-', '+', '=', '÷'].includes(btn) ? 'orange' : 'button'}
+              wide={btn === '0'}
+              key={btn}
+              btnName={`${btn}`}
+              clickHandler={clickHandler}
+            />
           ))
           }
         </div>

@@ -2,3 +2,45 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #9ee6a5;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.display {
+  height: 100px;
+  background-color: grey;
+  font-size: 4rem;
+  padding: 0 15px;
+  color: #fff;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.group {
+  height: 100px;
+}
+
+.orange,
+.button {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.true {
+  width: 50%;
+}
