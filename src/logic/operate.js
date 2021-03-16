@@ -1,6 +1,10 @@
 import Big from 'big.js';
 
 const operate = (num1, num2, operation) => {
+  if (num1 === '') {
+    return `${operation}${num2}`;
+  }
+
   let res;
   switch (operation) {
     case 'x':

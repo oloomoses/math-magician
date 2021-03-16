@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel({ clickHandler }) {
+const ButtonPanel = ({ clickHandler }) => {
   const groupData = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', 'x'],
@@ -12,19 +12,25 @@ function ButtonPanel({ clickHandler }) {
   ];
 
   return (
-    <div className="button">
+    <div className="btnPanel">
       { groupData.map(group => (
-        <div key={group}>
+        <div key={group} className="group">
           {
           group.map(btn => (
-            <Button key={btn} btnName={`${btn}`} clickHandler={clickHandler} />
+            <Button
+              color={['x', '-', '+', '=', '÷'].includes(btn) ? 'orange' : 'button'}
+              wide={btn === '0'}
+              key={btn}
+              btnName={`${btn}`}
+              clickHandler={clickHandler}
+            />
           ))
           }
         </div>
       ))}
     </div>
   );
-}
+};
 
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
