@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #9ee6a5;
+  background-color: #6591b8;
 }
 
 .calculator {
@@ -43,4 +43,65 @@ body {
 
 .true {
   width: 50%;
+}
+
+.navbar {
+  background-color:grey;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: orange;
+}
+
+.nav-link:hover {
+  color: #efefef;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bolder;
+  color: orange;
+}
+
+.separator {
+  color: #efefef;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.quote,
+.home {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(32, 28, 28);
+}
+
+.home-header {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+}
+
+.quote-text,
+.home-text {
+  font-size: 20px;
+  line-height: 1.6;
 }
