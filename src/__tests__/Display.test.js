@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Display from '../Display';
+import Display from '../components/Display';
 
 describe('Display Component', () => {
   it('matches snapshot', () => {

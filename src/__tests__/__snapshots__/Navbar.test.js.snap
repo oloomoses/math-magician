@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component matches the snapshot 1`] = `
+<div
+  className="navbar"
+>
+  <div
+    className="logo"
+  >
+    Math Magician
+  </div>
+  <div
+    className="nav"
+  >
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </div>
+    <div
+      className="separator"
+    >
+      |
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </div>
+    <div
+      className="separator"
+    >
+      |
+    </div>
+    <div
+      className="nav-item"
+    >
+      <a
+        className="nav-link"
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </div>
+  </div>
+</div>
+`;

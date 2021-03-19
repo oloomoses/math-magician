@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from '../Home';
+import Home from '../components/Home';
 
 describe('Home Component', () => {
   it('matches snapshot', () => {

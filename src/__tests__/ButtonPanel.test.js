@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { shallow } from 'enzyme';
-import ButtonPanel from '../ButtonPanel';
+import ButtonPanel from '../components/ButtonPanel';
+
+const clickHandler = () => ({ total: '', next: '', operation: '' });
 
 describe('ButtonPanel component', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<ButtonPanel />);
+    wrapper = shallow(<ButtonPanel clickHandler={clickHandler} />);
   });
 
   it('contains class btnPanel', () => {
